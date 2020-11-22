@@ -443,7 +443,7 @@ namespace Liberator.Driver
                 case "chromedriver":
                     return "chrome";
                 case "edgedriver":
-                    return "MicrosoftEdge";
+                    return "msedge";
                 case "firefoxdriver":
                     return "firefox";
                 case "internetexplorerdriver":
@@ -468,7 +468,7 @@ namespace Liberator.Driver
                 case "chromedriver":
                     return "chromedriver";
                 case "edgedriver":
-                    return "msdriver";
+                    return "msedgedriver";
                 case "firefoxdriver":
                     return "geckodriver";
                 case "internetexplorerdriver":

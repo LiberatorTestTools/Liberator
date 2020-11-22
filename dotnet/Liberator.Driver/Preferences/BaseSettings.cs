@@ -134,7 +134,7 @@ namespace Liberator.Driver.Preferences
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
                 ChromeDriverLocation = FindExecutables(@".\BrowserDrivers\Win\", "chromedriver.exe");
-                EdgeDriverLocation = @"C:\Windows\System32\MicrosoftWebDriver.exe";
+                EdgeDriverLocation = @".\BrowserDrivers\Win\";
                 FirefoxDriverLocation = FindExecutables(@".\BrowserDrivers\Win\", "geckodriver.exe");
                 InternetExplorerDriverLocation = FindExecutables(@".\BrowserDrivers\Win\", "IEDriverServer.exe");
                 OperaDriverLocation = FindExecutables(@".\BrowserDrivers\Win\", "operadriver.exe");

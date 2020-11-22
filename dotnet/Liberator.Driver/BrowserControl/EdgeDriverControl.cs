@@ -1,7 +1,7 @@
 ﻿using Liberator.Driver.Enums;
 using Liberator.Driver.Preferences;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Edge;
+using Microsoft.Edge.SeleniumTools;
 using System;
 using System.IO;
 using System.Reflection;
@@ -36,7 +36,11 @@ namespace Liberator.Driver.BrowserControl
         /// </summary>
         public EdgeDriverControl()
         {
-            Options = new EdgeOptions();
+            Options = new EdgeOptions
+            {
+                UseChromium = true,
+                BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+            };
         }
 
         /// <summary>
@@ -45,7 +49,11 @@ namespace Liberator.Driver.BrowserControl
         /// <param name="edgeSettings">The settings file to be used.</param>
         public EdgeDriverControl(EdgeSettings edgeSettings)
         {
-            Options = new EdgeOptions();
+            Options = new EdgeOptions()
+            {
+                UseChromium = true,
+                BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+            };
 
             if (edgeSettings != null)
             {
@@ -71,8 +79,8 @@ namespace Liberator.Driver.BrowserControl
             try
             {
                 SetEdgeDriverService();
-                Assembly assembly = Assembly.GetExecutingAssembly();
-                Driver = new EdgeDriver(Directory.GetParent(BaseSettings.EdgeDriverLocation).FullName, Options, BaseSettings.Timeout);
+                //Assembly assembly = Assembly.GetExecutingAssembly();
+                Driver = new EdgeDriver(BaseSettings.EdgeDriverLocation, Options);
                 return Driver;
             }
             catch (Exception ex)
@@ -119,7 +127,7 @@ namespace Liberator.Driver.BrowserControl
                 string host = Edge.Host;
                 string package = Edge.Package;
 
-                EdgeDriverService service = EdgeDriverService.CreateDefaultService(driverLocation);
+                EdgeDriverService service = EdgeDriverService.CreateChromiumService(driverLocation);
                 service.HideCommandPromptWindow = command;
                 service.Host = host ?? null;
                 service.Package = package ?? null;

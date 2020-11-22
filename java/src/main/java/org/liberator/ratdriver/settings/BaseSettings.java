@@ -24,14 +24,14 @@ public class BaseSettings {
             SafariLocation = "/Applications/Safari.app";
         } else if (PlatformUtil.isWindows()) {
             ChromeDriverLocation = "src/main/resources/drivers/win/chromedriver.exe";
-            EdgeDriverLocation = "C:\\Windows\\System32\\MicrosoftWebDriver.exe";
+            EdgeDriverLocation = "C:\\Windows\\System32\\msedgedriver.exe";
             FirefoxDriverLocation = "src/main/resources/drivers/win/geckodriver.exe";
             InternetExplorerDriverLocation = "src/main/resources/drivers/win/IEDriverServer.exe";
             OperaDriverLocation = "src/main/resources/drivers/win/operadriver.exe";
             SafariDriverLocation = null;
             FirefoxLocation = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\firefox.exe";
             SafariLocation = null;
-            OperaLocation = "C:\\Program Files\\Opera\\66.0.3515.44\\opera.exe";
+            OperaLocation = "C:\\Program Files\\Opera\\72.0.3815.378\\opera.exe";
         } else if (PlatformUtil.isLinux()){
             ChromeDriverLocation = "/usr/local/bin/chromedriver";
             EdgeDriverLocation = "";

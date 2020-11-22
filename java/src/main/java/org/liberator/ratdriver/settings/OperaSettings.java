@@ -20,7 +20,7 @@ public class OperaSettings extends BaseSettings {
         AndroidDebugBridgePort = -1;
         EnableVerboseLogging = false;
         HideCommandPromptWindow = true;
-        Port = 4444;
+        /*Port = 4444;*/
         SuppressInitialDiagnosticInformation = true;
     }
 

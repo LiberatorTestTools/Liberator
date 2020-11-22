@@ -1893,6 +1893,9 @@ public class RatDriver implements IRatDriver {
             waitForElementToBeClickable(element);
             if (DriverName.equals("SafariDriver")) {
                 Element.sendKeys(Keys.RETURN);
+            } else if(DriverName.equals("InternetExplorerDriver")) {
+                Actions actions = new Actions(Driver);
+                actions.moveToElement(element).click(element).build().perform();
             } else {
                 Element.click();
             }

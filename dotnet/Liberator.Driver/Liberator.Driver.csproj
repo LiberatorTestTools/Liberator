@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>Liberator.Driver</PackageId>
         <Version>0.9.0.0</Version>
@@ -53,12 +53,13 @@ Liberator uses Expected Conditions to avoid the race conditions common when auto
         </Content>
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="MathNet.Numerics" Version="4.9.0" />
+        <PackageReference Include="MathNet.Numerics" Version="4.12.0" />
+        <PackageReference Include="Microsoft.Edge.SeleniumTools" Version="3.141.2" />
         <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
         <PackageReference Include="NUnit" Version="3.12.0" />
         <PackageReference Include="Selenium.Support" Version="3.141.0" />
-        <PackageReference Include="System.Buffers" Version="4.5.0" />
-        <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+        <PackageReference Include="System.Buffers" Version="4.5.1" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
         <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
     </ItemGroup>
     <ItemGroup>
@@ -86,6 +87,9 @@ Liberator uses Expected Conditions to avoid the race conditions common when auto
         </None>
         <None Update="BrowserDrivers\Mac\chromedriver">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="BrowserDrivers\Win\msedgedriver.exe">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
     </ItemGroup>
 </Project>

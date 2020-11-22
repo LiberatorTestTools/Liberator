@@ -20,7 +20,7 @@ public class OperaTests {
 
     IRodent ratDriver;
 
-    String website = "http://localhost:8000";
+    String website = "http://localhost:80";
     String hostname = "localhost";
 
     @After

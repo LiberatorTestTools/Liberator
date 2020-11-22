@@ -21,7 +21,7 @@ public class IETests {
 
     IRodent ratDriver;
 
-    String website = "http://localhost:8000";
+    String website = "http://localhost:80";
     String hostname = "localhost";
 
     @After
@@ -33,7 +33,7 @@ public class IETests {
     public void testInstantiationIE() {
         ratDriver = new RatDriver(DriverType.InternetExplorerDriver, false);
         ratDriver.navigateToPage(website);
-        Assert.assertTrue(ratDriver.getBrowserWindowUrl().contains(website));
+        Assert.assertTrue(ratDriver.getBrowserWindowUrl().contains(hostname));
         ratDriver.closePagesAndQuitDriver();
     }
 

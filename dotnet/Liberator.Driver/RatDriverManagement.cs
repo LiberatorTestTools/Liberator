@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Edge;
+using Microsoft.Edge.SeleniumTools;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Opera;
@@ -628,9 +628,13 @@ namespace Liberator.Driver
         /// <param name="url">The URL of the website to load in the browser</param>
         public void NavigateToPage(string url)
         {
+            IWebElement currentPage = null;
             try
             {
-                IWebElement currentPage = Driver.FindElement(By.TagName("html"));
+                if (Driver.Url !="" || Driver.Url != null)
+                {
+                    currentPage = Driver.FindElement(By.TagName("html"));
+                }
                 Driver.Navigate().GoToUrl(url);
                 WaitForPageToLoad(currentPage);
                 Console.Out.WriteLine("Loaded the URL: {0}.", url);
