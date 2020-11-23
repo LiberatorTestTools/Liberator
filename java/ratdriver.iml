@@ -11,13 +11,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:linux:13.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:linux:13.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:linux:13.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:linux:13.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-media:linux:13.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-swing:linux:13.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-web:linux:13.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-java:3.141.59" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-api:3.141.59" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:3.141.59" level="project" />
@@ -43,18 +36,18 @@
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.13.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:16-ea+4" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:16-ea+4" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:mac:16-ea+4" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:16-ea+4" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:16-ea+4" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:mac:16-ea+4" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:16-ea+4" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:16-ea+4" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:mac:16-ea+4" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:16-ea+4" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:16-ea+4" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:mac:16-ea+4" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-media:16-ea+4" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-media:win:16-ea+4" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-media:mac:16-ea+4" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-swing:16-ea+4" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-swing:win:16-ea+4" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-swing:mac:16-ea+4" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-web:16-ea+4" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-web:win:16-ea+4" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-web:mac:16-ea+4" level="project" />
   </component>
 </module>

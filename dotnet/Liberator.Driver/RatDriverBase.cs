@@ -45,8 +45,8 @@ namespace Liberator.Driver
         /// </summary>
         /// <param name="driverSettings">Settings file for the Driver being instantiated.</param>
         /// <param name="performanceTimings">Whether to obtain performance timings for the browser.</param>
-        public RatDriver([Optional, DefaultParameterValue(null)]IDriverSettings driverSettings,
-            [Optional, DefaultParameterValue(false)]bool performanceTimings)
+        public RatDriver([Optional, DefaultParameterValue(null)] IDriverSettings driverSettings,
+            [Optional, DefaultParameterValue(false)] bool performanceTimings)
         {
             try
             {
@@ -96,8 +96,8 @@ namespace Liberator.Driver
         /// <param name="profileName">The name of the profile to load</param>
         /// <param name="driverSettings">Settings file for the Driver being instantiated.</param>
         /// <param name="performanceTimings">Whether to obtain performance timings for the browser.</param>
-        public RatDriver(string profileName, [Optional, DefaultParameterValue(null)]FirefoxSettings driverSettings,
-            [Optional, DefaultParameterValue(false)]bool performanceTimings)
+        public RatDriver(string profileName, [Optional, DefaultParameterValue(null)] FirefoxSettings driverSettings,
+            [Optional, DefaultParameterValue(false)] bool performanceTimings)
         {
             try
             {
@@ -152,8 +152,8 @@ namespace Liberator.Driver
         /// <param name="driverSettings">Settings file for the Driver being instantiated.</param>
         /// <param name="performanceTimings">Whether to obtain performance timings for the browser.</param>
         public RatDriver(string profileDirectory, bool cleanDirectory,
-            [Optional, DefaultParameterValue(null)]FirefoxSettings driverSettings,
-             [Optional, DefaultParameterValue(false)]bool performanceTimings)
+            [Optional, DefaultParameterValue(null)] FirefoxSettings driverSettings,
+             [Optional, DefaultParameterValue(false)] bool performanceTimings)
         {
             try
             {
@@ -207,8 +207,8 @@ namespace Liberator.Driver
         /// <param name="driverSettings">Settings file for the Driver being instantiated.</param>
         /// <param name="performanceTimings">Whether to obtain performance timings for the browser.</param>
         public RatDriver(EnumPhoneType type, [Optional, DefaultParameterValue(false)] bool touch,
-            [Optional, DefaultParameterValue(null)]ChromeSettings driverSettings,
-            [Optional, DefaultParameterValue(false)]bool performanceTimings)
+            [Optional, DefaultParameterValue(null)] ChromeSettings driverSettings,
+            [Optional, DefaultParameterValue(false)] bool performanceTimings)
         {
             try
             {
@@ -265,8 +265,8 @@ namespace Liberator.Driver
         /// <param name="performanceTimings">Whether to obtain performance timings for the browser.</param>
         public RatDriver(long height, long width, string userAgent, double pixelRatio,
             [Optional, DefaultParameterValue(false)] bool touch,
-            [Optional, DefaultParameterValue(null)]ChromeSettings driverSettings,
-            [Optional, DefaultParameterValue(false)]bool performanceTimings)
+            [Optional, DefaultParameterValue(null)] ChromeSettings driverSettings,
+            [Optional, DefaultParameterValue(false)] bool performanceTimings)
         {
             try
             {

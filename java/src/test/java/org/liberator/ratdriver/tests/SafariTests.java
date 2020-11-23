@@ -21,7 +21,7 @@ public class SafariTests {
 
     IRodent ratDriver;
 
-    String website = "http://localhost:8000";
+    String website = "http://localhost:80";
     String hostname = "localhost";
     
     @After
@@ -91,7 +91,7 @@ public class SafariTests {
         ratDriver.closePagesAndQuitDriver();
     }
 
-    @Ignore
+/*    @Ignore
     @Test
     public void testGetBrowserLogEntriesSafari() {
         ratDriver= new RatDriver(DriverType.SafariDriver, false);
@@ -99,7 +99,7 @@ public class SafariTests {
         List<LogEntry> logEntries = ratDriver.getAvailableLogEntries("browser");
         Assert.assertNotNull(logEntries);
         ratDriver.closePagesAndQuitDriver();
-    }
+    }*/
 
     @Test
     public void testSetImplicitWaitSafari() {
